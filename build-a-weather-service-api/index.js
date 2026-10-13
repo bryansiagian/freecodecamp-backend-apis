@@ -1,17 +1,28 @@
 import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
 import weatherRouter from "./weather.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = 3000;
 
+app.use(express.static(path.join(__dirname, "public")));
+
 app.use("/api/weather", weatherRouter);
 
 app.get("/", (req, res) => {
-  res.send("Welcome to the Weather Service API!");
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 app.get("/api/info", (req, res) => {
-  res.json({ name: "Weather Service API" });
+  res.json({
+    name: "Weather Service API",
+    version: "1.0.0",
+    endpoints: ["/api/weather/:city", "/api/greet/:name", "/api/data"],
+  });
 });
 
 app.get("/api/status", (req, res) => {
