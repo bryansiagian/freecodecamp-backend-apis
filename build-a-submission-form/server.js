@@ -1,5 +1,9 @@
 import express from "express";
 import apiRouter from "./routes/api.routes.js";
+import {
+  notFoundHandler,
+  finalErrorHandler,
+} from "./middleware/error.middleware.js";
 
 const app = express();
 
@@ -13,6 +17,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api", apiRouter);
+
+app.use(notFoundHandler);
+app.use(finalErrorHandler);
 
 app.listen(3000, () => {
   console.log("Server running at http://localhost:3000");
