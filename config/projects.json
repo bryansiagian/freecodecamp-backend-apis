@@ -126,13 +126,14 @@
     "dashedName": "build-a-weather-service-api",
     "isIntegrated": false,
     "isPublic": true,
-    "currentLesson": 16,
+    "currentLesson": 19,
     "runTestsOnWatch": true,
     "seedEveryLesson": false,
     "isResetEnabled": false,
     "blockingTests": null,
     "breakOnFailure": null,
-    "numberOfLessons": 20
+    "numberOfLessons": 20,
+    "completedDate": 1791890620241
   },
   {
     "id": 10,
@@ -145,14 +146,15 @@
     "isResetEnabled": false,
     "blockingTests": true,
     "breakOnFailure": true,
-    "numberOfLessons": 1
+    "numberOfLessons": 1,
+    "completedDate": 1791890964007
   },
   {
     "id": 11,
     "dashedName": "build-a-bank-api",
     "isIntegrated": false,
     "isPublic": true,
-    "currentLesson": 0,
+    "currentLesson": 1,
     "runTestsOnWatch": true,
     "seedEveryLesson": false,
     "isResetEnabled": false,
