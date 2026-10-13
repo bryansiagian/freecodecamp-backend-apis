@@ -99,7 +99,7 @@
     "dashedName": "build-a-submission-form",
     "isIntegrated": false,
     "isPublic": true,
-    "currentLesson": 0,
+    "currentLesson": 3,
     "runTestsOnWatch": true,
     "seedEveryLesson": false,
     "isResetEnabled": false,
