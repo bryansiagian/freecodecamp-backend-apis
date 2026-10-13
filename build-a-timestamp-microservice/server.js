@@ -13,6 +13,27 @@ app.get("/", (_req, res) => {
 
 // Do not change code above this line
 
+function buildResponse(date) {
+  if (isNaN(date.getTime())) {
+    return { error: "Invalid Date" };
+  }
+  return { unix: date.getTime(), utc: date.toUTCString() };
+}
+
+app.get("/api", (_req, res) => {
+  res.json(buildResponse(new Date()));
+});
+
+app.get("/api/:date", (req, res) => {
+  const { date } = req.params;
+
+  // Angka murni (timestamp milidetik) harus diubah ke Number dulu,
+  // karena new Date("1451001600000") menghasilkan Invalid Date.
+  const input = /^-?\d+$/.test(date) ? Number(date) : date;
+
+  res.json(buildResponse(new Date(input)));
+});
+
 // Do not change code below this line
 
 const PORT = 8000;
