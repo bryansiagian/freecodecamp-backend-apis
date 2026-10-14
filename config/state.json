@@ -1,9 +1,9 @@
 {
-  "currentProject": "build-a-bank-api",
+  "currentProject": null,
   "locale": "english",
   "lastSeed": {
-    "projectDashedName": null,
-    "lessonNumber": -1
+    "projectDashedName": "build-a-resource-monitor",
+    "lessonNumber": 15
   },
-  "lastWatchChange": 1
+  "lastWatchChange": 0
 }
