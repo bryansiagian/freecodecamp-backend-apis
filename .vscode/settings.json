@@ -28,8 +28,8 @@
     "build-a-weather-service-api": true,
     "build-a-bank-api": true,
     "build-a-resource-monitor": true,
-    "build-a-chat-app": false,
-    "build-jwt-protected-routes": true
+    "build-a-chat-app": true,
+    "build-jwt-protected-routes": false
   },
   "chat.disableAIFeatures": true,
   "files.autoSave": "off",

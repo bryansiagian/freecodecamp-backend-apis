@@ -196,7 +196,7 @@
     "dashedName": "build-jwt-protected-routes",
     "isIntegrated": false,
     "isPublic": true,
-    "currentLesson": 0,
+    "currentLesson": 26,
     "runTestsOnWatch": true,
     "seedEveryLesson": false,
     "isResetEnabled": false,
