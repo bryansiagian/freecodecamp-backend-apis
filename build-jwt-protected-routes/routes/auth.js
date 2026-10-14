@@ -9,6 +9,7 @@ import {
 } from "../utils/db.js";
 import { signToken } from "../utils/jwt.js";
 import authenticate from "../middleware/authenticate.js";
+import { blacklistToken } from "../utils/token-blacklist.js";
 
 const router = express.Router();
 
@@ -88,6 +89,16 @@ router.post("/login", async (req, res) => {
 
 router.get("/profile", authenticate, (req, res) => {
   return res.json({ user: req.user });
+});
+
+router.post("/logout", authenticate, (req, res) => {
+  const token = req.headers.authorization.split(" ")[1];
+
+  blacklistToken(token);
+
+  return res.json({
+    message: "Logged out successfully",
+  });
 });
 
 export default router;

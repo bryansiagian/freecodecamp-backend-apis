@@ -1,5 +1,6 @@
 
 import { verifyToken } from "../utils/jwt.js";
+import { isBlacklisted } from "../utils/token-blacklist.js";
 
 export default function authenticate(req, res, next) {
   const authorization = req.headers.authorization;
@@ -11,6 +12,13 @@ export default function authenticate(req, res, next) {
   }
 
   const token = authorization.split(" ")[1];
+
+  if (isBlacklisted(token)) {
+    return res.status(401).json({
+      message: "Token has been invalidated. Log in again.",
+    });
+  }
+
   const decoded = verifyToken(token);
 
   if (!decoded) {

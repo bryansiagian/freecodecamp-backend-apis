@@ -196,13 +196,14 @@
     "dashedName": "build-jwt-protected-routes",
     "isIntegrated": false,
     "isPublic": true,
-    "currentLesson": 26,
+    "currentLesson": 35,
     "runTestsOnWatch": true,
     "seedEveryLesson": false,
     "isResetEnabled": false,
     "blockingTests": null,
     "breakOnFailure": null,
-    "numberOfLessons": 36
+    "numberOfLessons": 36,
+    "completedDate": 1791982324933
   },
   {
     "id": 15,
@@ -215,6 +216,7 @@
     "isResetEnabled": false,
     "blockingTests": true,
     "breakOnFailure": true,
-    "numberOfLessons": 1
+    "numberOfLessons": 1,
+    "completedDate": 1791983085060
   }
 ]
