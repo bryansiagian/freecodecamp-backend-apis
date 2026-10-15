@@ -1,9 +1,9 @@
 {
-  "currentProject": "learn-nodejs-repl",
+  "currentProject": null,
   "locale": "english",
   "lastSeed": {
     "projectDashedName": "build-a-resource-monitor",
     "lessonNumber": 15
   },
-  "lastWatchChange": 1
+  "lastWatchChange": 22
 }
