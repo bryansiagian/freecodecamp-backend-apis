@@ -9,3 +9,15 @@ npm install case_converter
 ```
 
 ## Usage
+
+```js
+const caseConverter = require("./index");
+const str = "hello free Code Camp!";
+console.log(caseConverter.getUpperCase(str)); // HELLO FREE CODE CAMP!
+console.log(caseConverter.getLowerCase(str)); // hello free code camp!
+console.log(caseConverter.getProperCase(str)); // Hello Free Code Camp!
+console.log(caseConverter.getSentenceCase(str)); // Hello free code camp!
+```
+
+## License
+This project is licensed under the MIT license.

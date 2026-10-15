@@ -1,0 +1,1 @@
+const caseConverter = require("./index");
