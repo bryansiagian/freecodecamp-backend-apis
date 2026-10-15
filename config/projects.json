@@ -108,7 +108,8 @@
     "isResetEnabled": false,
     "blockingTests": null,
     "breakOnFailure": null,
-    "numberOfLessons": 22
+    "numberOfLessons": 22,
+    "completedDate": 1792028319561
   },
   {
     "id": 8,
