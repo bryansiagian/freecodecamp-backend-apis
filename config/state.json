@@ -1,9 +1,9 @@
 {
-  "currentProject": null,
+  "currentProject": "build-a-file-processor",
   "locale": "english",
   "lastSeed": {
     "projectDashedName": "build-a-resource-monitor",
     "lessonNumber": 15
   },
-  "lastWatchChange": 22
+  "lastWatchChange": 3
 }
